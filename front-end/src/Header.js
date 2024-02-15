@@ -40,6 +40,9 @@ const Header = props => {
               <Link to="/login">Log in</Link>
             )}
           </li>
+          <li className="nav-item">
+            <Link to="/about-us"> About Us</Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -83,6 +83,16 @@ app.post('/auth/sign-up', async (req, res) => {
   }
   user = User.create(user) // create the new user
 
+  const aboutUsData = {
+    title: 'About Us!',
+    content: ['Get to know me!'],
+    imageURL: '',
+  }
+
+  app.get('/about-us', (req, res) => {
+    res.json(aboutUsData)
+  })
+
   // send back a jwt
   jwt.sign(
     {
